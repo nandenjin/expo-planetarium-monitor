@@ -1,0 +1,29 @@
+{
+  "name": "@nandenjin/expo-planetarium-monitor",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext ts .",
+    "lintfix": "eslint --ext ts . --fix",
+    "format": "prettier --write \"**/*.{ts,json,yml,yaml,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.3.0",
+    "@types/cheerio": "^0.22.28",
+    "@types/google-apps-script": "^1.0.30",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-googleappsscript": "^1.0.3",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.{ts,json,yml,yaml,md}": "prettier --write"
+  }
+}
